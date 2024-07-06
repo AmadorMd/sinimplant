@@ -14,14 +14,14 @@
     <link href="./css/splide-default.min.css" rel="stylesheet">
 </head>
 
-<body>
-    <header class="bg-white">
-        <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+<body class="">
+    <header class="bg-white fixed z-40 w-full top-0 navbar xl:py-2 xl:shadow-lg">
+        <div class="mx-auto max-w-screen-xl px-4 sm:px-6 md:px-4 lg:px-8">
             <div class="flex h-16 items-center justify-between">
                 <div class="flex-1 md:flex md:items-center md:gap-12">
                     <a class="block" href="#">
                         <span class="sr-only">Home</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-auto" viewBox="0 0 252.5 88.452">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 xl:h-16 w-auto" viewBox="0 0 252.5 88.452">
                             <g id="Grupo_4" data-name="Grupo 4" transform="translate(-48.5 -21.548)">
                                 <text id="Last_Time" data-name="Last Time" transform="translate(48.5 81)" fill="#707070"
                                     font-size="37" font-family="Montserrat-SemiBold, Montserrat" font-weight="600">
@@ -60,49 +60,59 @@
                 <div id="mobile-menu" class="mobile-menu fixed right-5 top-16 z-50 bg-siniblue rounded-b-md ">
                     <ul class="flex flex-col items-center text-sm divide-y divide-sinigreen w-52 text-center">
                         <li class="w-full hover:bg-sinigreen transition-all ease-in-out group py-2">
-                            <a class="text-white transition group-hover:text-siniblue" href="#"> Inicio </a>
+                            <a class="text-white transition group-hover:text-siniblue" href="#inicio"> Inicio </a>
                         </li>
 
                         <li class="w-full hover:bg-sinigreen transition-all ease-in-out group py-2">
-                            <a class="text-white transition group-hover:text-siniblue" href="#"> ¿Por qué retirar
+                            <a class="text-white transition group-hover:text-siniblue" href="#por-que-retirar"> ¿Por qué
+                                retirar
                                 mis implantes? </a>
                         </li>
 
                         <li class="w-full hover:bg-sinigreen transition-all ease-in-out group py-2">
-                            <a class="text-white transition group-hover:text-siniblue" href="#"> Complicaciones </a>
+                            <a class="text-white transition group-hover:text-siniblue" href="#complicaciones">
+                                Complicaciones </a>
                         </li>
 
                         <li class="w-full hover:bg-sinigreen transition-all ease-in-out group py-2">
-                            <a class="text-white transition group-hover:text-siniblue" href="#"> Procedimientos </a>
+                            <a class="text-white transition group-hover:text-siniblue" href="#procedimientos">
+                                Procedimientos </a>
                         </li>
 
                         <li class="w-full hover:bg-sinigreen transition-all ease-in-out group py-2">
-                            <a class="text-white transition group-hover:text-siniblue" href="#"> Especialista </a>
+                            <a class="text-white transition group-hover:text-siniblue" href="#especialistas">
+                                Especialista </a>
                         </li>
                     </ul>
                 </div>
                 <div class="md:flex md:items-center md:gap-12">
                     <nav aria-label="Global" class="hidden md:block">
-                        <ul class="flex items-center gap-6 text-sm">
+                        <ul class="flex items-center gap-4 text-xs xl:text-base leading-tight">
                             <li>
-                                <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Inicio </a>
+                                <a class="text-gray-500 transition  hover:text-gray-500/75" href="#inicio"> Inicio </a>
                             </li>
 
                             <li>
-                                <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> ¿Por qué retirar
+                                <a class="text-gray-500 transition  hover:text-gray-500/75" href="#por-que-retirar">
+                                    ¿Por qué retirar
                                     mis implantes? </a>
                             </li>
 
                             <li>
-                                <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Complicaciones </a>
+                                <a class="text-gray-500 transition  hover:text-gray-500/75" href="#complicaciones">
+                                    Complicaciones
+                                </a>
                             </li>
 
                             <li>
-                                <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Procedimientos </a>
+                                <a class="text-gray-500 transition  hover:text-gray-500/75" href="#procedimientos">
+                                    Procedimientos
+                                </a>
                             </li>
 
                             <li>
-                                <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Especialista </a>
+                                <a class="text-gray-500 transition  hover:text-gray-500/75" href="#especialista">
+                                    Especialista </a>
                             </li>
                         </ul>
                     </nav>
@@ -123,16 +133,21 @@
         </div>
     </header>
     <main>
-        <section class="splide" aria-label="Splide Basic HTML Example">
+        <section id="inicio" class="splide mt-16 lg:mt-20" aria-label="Splide Basic HTML Example">
             <div class="splide__track">
                 <ul class="splide__list">
                     <li class="splide__slide">
-                        <div class="w-full h-full relative">
+                        <div class="w-full h-[50vh] lg:h-auto relative">
                             <div
-                                class="bg-white bg-opacity-40 absolute left-0 top-0 h-full w-2/3 flex flex-col justify-center items-center pl-16 pr-4">
-                                <h1 class="font-black uppercase text-siniblue leading-tight">Un nuevo cambio para ti y
+                                class="bg-white bg-opacity-40 absolute left-0 top-0 h-full w-2/3 lg:w-1/2 flex flex-col justify-center items-center pl-16 pr-4">
+                                <h1
+                                    class="font-black uppercase text-siniblue leading-tight md:text-xl lg:text-2xl xl:text-3xl">
+                                    Un
+                                    nuevo cambio
+                                    para ti y
                                     para tu nueva vida.</h1>
-                                <p class="mt-4 text-sm">Evita un problema y toma la mejor decisión
+                                <p class="mt-4 text-xs md:text-base xl:text-lg">Evita un problema y toma la mejor
+                                    decisión
                                     para tu salud y tu cuerpo.</p>
                                 <div class="mt-4">
                                     <a class="bg-siniblue leading-none uppercase text-white text-sm font-bold px-6 py-2 rounded-full"
@@ -141,7 +156,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <img src="./assets/slide-1.jpg" alt="">
+                            <img class="h-full w-full object-cover" src="./assets/slide-1.jpg" alt="">
                         </div>
                     </li>
                     <li class="splide__slide">
@@ -166,10 +181,10 @@
             </div>
         </section>
         <section class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 mt-10 relative">
-            <div class="w-full flex justify-between flex-col md:flex-row">
-                <div class="w-full md:w-3/4">
+            <div class="w-full flex justify-between flex-col md:flex-row xl:items-center">
+                <div class="w-full md:w-3/4 md:pr-8">
                     <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-auto" viewBox="0 0 252.5 88.452">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-14 md:h-20 w-auto" viewBox="0 0 252.5 88.452">
                             <g id="Grupo_4" data-name="Grupo 4" transform="translate(-48.5 -21.548)">
                                 <text id="Last_Time" data-name="Last Time" transform="translate(48.5 81)" fill="#707070"
                                     font-size="37" font-family="Montserrat-SemiBold, Montserrat" font-weight="600">
@@ -220,10 +235,10 @@
                 </div>
                 <div class="w-full md:w-1/3 mt-10 md:mt-0 relative">
                     <img class="w-1/2 mx-auto md:w-full" src="./assets/image-into.jpg" alt="">
-                    <div id="hexagon-siluette-1" class="absolute -right-10 bottom-[190px]">
+                    <div id="hexagon-siluette-1" class="absolute -right-10 bottom-[190px] md:-top-20 md:-right-24">
                         <img class="w-52" src="/assets/svg/hexagon-siluette.svg" alt="">
                     </div>
-                    <div id="hexagon-siluette-2" class="absolute left-10 bottom-0 transform rotate-180">
+                    <div id="hexagon-siluette-2" class="absolute left-10 bottom-0 transform rotate-180 md:-left-10">
                         <img class="w-36" src="/assets/svg/hexagon-siluette.svg" alt="">
                     </div>
                     <div id="plants-siluette-1" class="absolute -left-2 top-0 transform">
@@ -258,18 +273,18 @@
                 </g>
             </svg>
         </div>
-        <section class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 mt-10 relative">
-            <div class="w-full flex justify-between flex-col-reverse md:flex-row">
+        <section id="por-que-retirar" class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 mt-10 relative">
+            <div class="w-full flex justify-between flex-col-reverse md:flex-row xl:items-center">
                 <div class="w-full md:w-1/3 mt-10 md:mt-0 relative">
                     <img class="w-1/2 mx-auto md:w-full relative z-10" src="./assets/retirar-image.png" alt="">
                     <div id="plants-siluette-3" class="absolute left-8 -top-14 transform z-0">
                         <img class="w-44" src="/assets/svg/plants-siluette-2.svg" alt="">
                     </div>
-                    <div id="hexagon-siluette-3" class="absolute left-8 top-14 transform z-20">
+                    <div id="hexagon-siluette-3" class="absolute left-8 top-14 transform z-20 md:-left-20">
                         <img class="w-36" src="/assets/svg/hexagon-siluette.svg" alt="">
                     </div>
                 </div>
-                <div class="w-full md:w-3/4">
+                <div class="w-full md:w-3/4 md:pl-8">
                     <h2 class="text-2xl font-black">¿Por Qué Retirar <br> Los Implantes?</h2>
                     <p class="mt-4">
                         Con el paso del tiempo, tus necesidades y deseos pueden cambiar. Ya sea por <span
@@ -290,11 +305,11 @@
         <div id="addon-siluette-2" class="mt-5">
             <img src="./assets/svg/addon-siluette-2.svg" alt="">
         </div>
-        <section class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 mt-10">
+        <section id="complicaciones" class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 mt-10">
             <div class="w-full flex justify-between flex-col md:flex-row">
 
-                <div class="w-full md:w-3/4 relative">
-                    <h2 class="text-2xl font-black">Algunas complicaciones
+                <div class="w-full md:w-3/4 relative md:pr-12">
+                    <h2 class="text-2xl font-black text-siniblue">Algunas complicaciones
                         que pudieran presentar
                         los implantes</h2>
                     <p class="mt-4">
@@ -355,26 +370,27 @@
                     </div>
                 </div>
                 <div class="w-full md:w-1/3 mt-10 md:mt-0 relative">
-                    <img class="w-1/2 mx-auto md:w-full z-10 relative" src="./assets/alguna-complicaciones-image.jpg"
+                    <img class="w-1/2 mx-auto md:w-full z-10 relative" src="./assets/alguna-complicaciones-image.png"
                         alt="">
-                    <div id="plants-siluette-5" class="absolute -right-20 bottom-0 transform z-0">
-                        <img class="w-80" src="/assets/svg/plants-siluette-3.svg" alt="">
+                    <div id="plants-siluette-5" class="absolute -right-20 bottom-0 transform z-0 w-80">
+                        <img class="w-full object-cover object-left" src="/assets/svg/plants-siluette-3.svg" alt="">
                     </div>
                 </div>
             </div>
         </section>
-        <section class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 mt-20 bg-sinigreen">
-            <div class="w-full flex justify-between flex-col md:flex-row pb-14">
-                <div class="w-full md:w-1/3 relative">
-                    <img class="w-full mx-auto md:w-full relative z-10" src="./assets/sabias-image.png" alt="">
+        <section class="mx-auto max-w-screen-xl px-4 sm:px-6 md:px-0 lg:px-8 mt-20 bg-sinigreen">
+            <div class="w-full flex justify-between flex-col md:flex-row pb-14 md:pb-0 xl:items-center">
+                <div class="w-full md:w-1/2 relative">
+                    <img class="w-full mx-auto md:h-full object-cover relative z-10" src="./assets/sabias-image.png"
+                        alt="">
                     <div id="random-siluette" class="absolute -left-5 bottom-0 transform z-0 opacity-50">
                         <img class="w-full" src="/assets/svg/random-siluette.svg" alt="">
                     </div>
                 </div>
-                <div class="w-full md:w-3/4 mt-10 relative">
-                    <h2 class="text-2xl font-black text-siniblue">¿Sabías que los Implantes
+                <div class="w-full md:w-1/2 mt-10 md:mt-0 relative md:pl-6 md:py-5">
+                    <h2 class="text-2xl md:text-lg font-black text-siniblue">¿Sabías que los Implantes
                         no son para toda la vida?</h2>
-                    <p class="mt-4 text-siniblue">
+                    <p class="mt-4 md:text-sm text-siniblue">
                         Toda mujer que se <span class="font-bold">someta a un aumento de senos</span>, debe estar
                         consciente que no son dispositivos
                         para toda la vida. Cuanto
@@ -383,14 +399,14 @@
                         complicaciones, algunas de las cuales
                         requerirán más cirugía.
                     </p>
-                    <p class="mt-4 text-siniblue">
+                    <p class="mt-4 md:text-sm text-siniblue">
                         Aunque la ciencia ha avanzado a pasos agigantados y los implantes son diseñados con la
                         tecnología de punta y avalados
                         por estudios médicos, la <span class="font-bold">vida útil de los implantes</span> de senos
                         varía según la persona y es difícil
                         de predecir.
                     </p>
-                    <p class="mt-4 text-siniblue">
+                    <p class="mt-4 md:text-sm text-siniblue">
                         Tomar la <span class="font-bold">mejor decisión</span>, se convertirá en una <span
                             class="font-bold">mejor calidad de vida</span>.
 
@@ -402,9 +418,10 @@
 
             </div>
         </section>
-        <section class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 mt-10">
-            <div class="w-11/12 mx-auto bg-siniblue rounded-2xl px-5 py-5">
-                <div class="w-full md:w-1/3">
+        <section id="procedimientos" class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 mt-10 xl:px-0">
+            <div
+                class="w-11/12 xl:w-full mx-auto bg-siniblue rounded-2xl px-5 py-5 lg:flex-row lg:flex-wrap lg:flex lg:py-10">
+                <div class="w-full lg:w-1/3">
                     <h3 class="text-sinigreen font-black text-xl">
                         Nuestros
                         procedimiento Quirúrgicos
@@ -419,44 +436,46 @@
                         nuestros pacientes.
                     </p>
                 </div>
-                <div class="mt-10">
-                    <div class="flex-col justify-center items-center text-center px-6">
+                <div class="mt-10 lg:w-2/3 lg:flex lg:flex-row">
+                    <div class="flex-col justify-center items-center text-center px-6 lg:px-2 lg:w-1/3 relative">
                         <div class="relative">
                             <button
-                                class="h-9 w-9 bg-sinigreen font-bold text-2xl rounded-full hover:animate-bounce absolute left-[210px]">
+                                class="h-9 w-9 bg-sinigreen font-bold text-2xl rounded-full hover:animate-bounce absolute right-10 md:right-52 lg:right-10 lg:-top-5 xl:right-16 xl:top-0">
                                 +
                             </button>
-                            <img class="w-44 mx-auto" src="/assets/process-1.png" alt="Periaerolar">
+                            <img class="w-44 lg:w-24 mx-auto" src="/assets/process-1.png" alt="Periaerolar">
                         </div>
                         <h4 class="text-sinigreen font-bold mt-5">Periaerolar</h4>
-                        <p class="mt-7 text-sinigreen text-sm">
+                        <p class="mt-7 md:mt-4 md:px-20 lg:px-0 text-sinigreen text-sm lg:text-xs">
                             Remoción de implantes con levantamiento alrededor de la areola.
                         </p>
                     </div>
-                    <div class="flex-col justify-center items-center text-center px-6 mt-5 md:mt-0">
+                    <div
+                        class="flex-col justify-center items-center text-center px-6 mt-5 md:mt-12 lg:mt-0 lg:px-2 lg:w-1/3 relative">
                         <div class="relative">
                             <button
-                                class="h-9 w-9 bg-sinigreen font-bold text-2xl rounded-full hover:animate-bounce absolute left-[210px]">
+                                class="h-9 w-9 bg-sinigreen font-bold text-2xl rounded-full hover:animate-bounce absolute right-10 md:right-52 lg:right-10 lg:-top-5 xl:right-16 xl:top-0">
                                 +
-                            </button><img class="w-44 mx-auto" src="/assets/process-2.png" alt="Vertical">
+                            </button><img class="w-44 lg:w-24 mx-auto" src="/assets/process-2.png" alt="Vertical">
                         </div>
 
                         <h4 class="text-sinigreen font-bold mt-5">Vertical</h4>
-                        <p class="mt-7 text-sinigreen text-sm">
+                        <p class="mt-7 md:mt-4 md:px-20 lg:px-0 text-sinigreen text-sm lg:text-xs">
                             Incisión alrededor del borde de la areola y una segunda incisión vertical desde la areola
                             hasta el pliegue del seno.
                         </p>
                     </div>
-                    <div class="flex-col justify-center items-center text-center px-6 mt-5 md:mt-0">
+                    <div
+                        class="flex-col justify-center items-center text-center px-6 mt-5 md:mt-12 lg:mt-0 lg:px-2 lg:w-1/3 relative">
                         <div class="relative">
                             <button
-                                class="h-9 w-9 bg-sinigreen font-bold text-2xl rounded-full hover:animate-bounce absolute left-[210px]">
+                                class="h-9 w-9 bg-sinigreen font-bold text-2xl rounded-full hover:animate-bounce absolute right-10 md:right-52 lg:right-10 lg:-top-5 xl:right-16 xl:top-0">
                                 +
                             </button>
-                            <img class="w-44 mx-auto" src="/assets/process-3.png" alt="Tipo T">
+                            <img class="w-44 lg:w-24 mx-auto" src="/assets/process-3.png" alt="Tipo T">
                         </div>
                         <h4 class="text-sinigreen font-bold mt-5">Tipo "T"</h4>
-                        <p class="mt-7 text-sinigreen text-sm">
+                        <p class="mt-7 md:mt-4 md:px-20 lg:px-0 text-sinigreen text-sm lg:text-xs">
                             A través de estas incisiones, el cirujano remueve el exceso de piel y tejido si es
                             necesario, y crea un bolsillo para el
                             implante.
@@ -468,15 +487,16 @@
         <div id="addon-siluette-3" class="transform -translate-y-10">
             <img src="/assets/svg/addon-siluette-1.svg" alt="">
         </div>
-        <section class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 mt-10">
-            <div class="w-full flex justify-between flex-col-reverse md:flex-row">
-                <div class="w-full md:w-1/3 mt-10 md:mt-0 relative">
+        <section id="especialista" class="mx-auto max-w-screen-xl px-4 sm:px-6 md:px-0 lg:px-8 mt-10">
+            <div class="w-full flex justify-between flex-col-reverse md:flex-row xl:items-center">
+                <div class="w-full md:w-1/2 mt-10 md:mt-0 relative md:pl-8 overflow-y-hidden">
                     <img class="w-3/4 mx-auto md:w-full" src="./assets/dr-sanchez-sigel.png" alt="">
-                    <div id="plants-siluette-7" class="absolute -left-20 -bottom-20 transform z-0 ">
+                    <div id="plants-siluette-7"
+                        class="absolute -left-20 -bottom-20 transform z-0 md:-left-20 md:bottom-0">
                         <img class="w-52" src="/assets/svg/plants-siluette-5.svg" alt="">
                     </div>
                 </div>
-                <div class="w-full md:w-3/4">
+                <div class="w-full md:w-1/2 md:pl-6 md:pr-8 xl:pr-16">
                     <h3 class="text-2xl font-black text-siniblue">
                         Conoce a tú próximo Especialista
                     </h3>
@@ -502,7 +522,7 @@
             </div>
         </section>
         <section id="contact" class="bg-siniblue w-full mt-20 relative">
-            <div class="text-center py-10 px-6">
+            <div class="text-center py-10 px-6 xl:w-1/3 mx-auto">
                 <h4 class="text-siniemerald uppercase font-black">CONTÁCTANOS</h4>
                 <h2 class="text-sinigreen font-bold text-lg leading-tight mt-4">Buscamos la mejor manera
                     de que tus implantes vuelvan a
@@ -511,7 +531,7 @@
                     posible.</p>
             </div>
             <div class="relative z-10">
-                <form id="contact-form" class="flex flex-col justify-items-center items-center w-2/3 mx-auto">
+                <form id="contact-form" class="flex flex-col justify-items-center items-center w-2/3 xl:w-1/3 mx-auto">
                     <div class="my-2 w-full">
                         <input name="name"
                             class="w-full px-3 py-1 placeholder:text-xs placeholder:uppercase tracking-wide rounded-sm block"
@@ -547,7 +567,7 @@
             </div>
         </section>
         <div id="patologie-modal"
-            class="h-screen w-screen fixed top-0 left-0 bg-black bg-opacity-40  justify-center items-center hidden">
+            class="h-screen w-screen fixed top-0 left-0 bg-black bg-opacity-40  justify-center items-center hidden z-50">
             <modal class="w-3/4 max-w-screen-md h-auto bg-white pt-12 pb-5 px-6 rounded-lg">
                 <h3 id="patologie-title" class="font-bold text-center mb-2 uppercase">
                     Contractura capsular
@@ -565,7 +585,7 @@
         </div>
     </main>
     <footer class="">
-        <div class="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
+        <div class="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:pb-6 lg:px-8">
             <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
                 <div>
                     <div class="text-teal-600">
@@ -607,7 +627,7 @@
                     </div>
                 </div>
 
-                <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
+                <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-2">
                     <div>
 
 
@@ -641,15 +661,16 @@
                         </ul>
                     </div>
 
-                    <div>
-                        <p>Comunícate para más
-                            información:</p>
-                        <a href="tel:33-22-76-45-47">33-22-76-45-47</a>
-                    </div>
+
+                </div>
+                <div class="text-center mt-4 lg:col-span-3">
+                    <p>Comunícate para más
+                        información:</p>
+                    <a href="tel:33-22-76-45-47">33-22-76-45-47</a>
                 </div>
             </div>
 
-            <p class="text-xs text-gray-500">&copy; 2024. Sinimplant.</p>
+            <p class="text-xs text-gray-500 lg:text-center">&copy; 2024. Sinimplant.</p>
         </div>
     </footer>
     <script src="./js/splide.min.js"></script>
@@ -669,6 +690,26 @@
                 const data = compileFormData()
                 sendContactForm(data)
             }
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    // Obtén el alto de la barra de navegación
+                    const navbarHeight = document.querySelector('.navbar').offsetHeight;
+
+                    // Encuentra el elemento al que se desea desplazar
+                    const scrollTarget = document.querySelector(this.getAttribute('href'));
+
+                    // Calcula la posición a la que se necesita desplazar
+                    const topOffset = scrollTarget.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
+
+                    // Realiza el desplazamiento suave
+                    window.scrollTo({
+                        top: topOffset - 20,
+                        behavior: 'smooth'
+                    });
+                });
+            });
         });
         const compileFormData = () => {
             const form = document.getElementById('contact-form')

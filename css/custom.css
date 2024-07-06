@@ -3,6 +3,11 @@
     color: #0E0E0E;
 }
 
+body,
+html {
+    overflow-x: hidden;
+}
+
 .mobile-menu {
     opacity: 0;
     visibility: hidden;
