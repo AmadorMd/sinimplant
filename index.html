@@ -484,7 +484,17 @@
                     <div class="flex-col justify-center items-center text-center px-6 lg:px-2 lg:w-1/3 relative">
                         <div class="relative">
                             <button
-                                class="h-9 w-9 bg-sinigreen font-bold text-2xl rounded-full hover:animate-bounce absolute right-10 md:right-52 lg:right-10 lg:-top-5 xl:right-16 xl:top-0">
+                                class="h-9 w-9 bg-sinigreen font-bold text-2xl rounded-full hover:animate-bounce absolute right-10 md:right-52 lg:right-10 lg:-top-5 xl:right-16 xl:top-0"
+                                onclick="openProcedureModal({
+                                name: 'Periaerolar',
+                                description: `<ul class='list-decimal px-6'>
+                                    <li>Se realiza una incisión en el borde inferior de la areola.</li>
+                                    <li>A través de esta incisión, el cirujano crea un bolsillo en el tejido mamario.</li>
+                                    <li>El implante se inserta en el bolsillo, ya sea debajo del músculo pectoral o directamente detrás del tejido mamario.</li>
+                                    <li>La incisión se cierra con suturas y se aplica un vendaje.</li>
+                                    </ul>`,
+                                image: './assets/process-1.png'
+                                })">
                                 +
                             </button>
                             <img class="w-44 lg:w-24 mx-auto" src="./assets/process-1.png" alt="Periaerolar">
@@ -498,7 +508,17 @@
                         class="flex-col justify-center items-center text-center px-6 mt-5 md:mt-12 lg:mt-0 lg:px-2 lg:w-1/3 relative">
                         <div class="relative">
                             <button
-                                class="h-9 w-9 bg-sinigreen font-bold text-2xl rounded-full hover:animate-bounce absolute right-10 md:right-52 lg:right-10 lg:-top-5 xl:right-16 xl:top-0">
+                                class="h-9 w-9 bg-sinigreen font-bold text-2xl rounded-full hover:animate-bounce absolute right-10 md:right-52 lg:right-10 lg:-top-5 xl:right-16 xl:top-0"
+                                onclick="openProcedureModal({
+                                name: 'Vertical',
+                                description: `<ul class='list-decimal px-6'>
+                                    <li>Se hace una incisión alrededor del borde inferior de la areola y una segunda incisión vertical desde la areola hasta el pliegue del seno.</li>
+                                    <li>A través de estas incisiones, el cirujano crea un bolsillo para el implante.</li>
+                                    <li>El implante se coloca en el bolsillo, ya sea debajo del músculo pectoral o detrás del tejido mamario.</li>
+                                    <li>Las incisiones se cierran con suturas y se coloca un vendaje.</li>
+                                    </ul>`,
+                                image: './assets/process-2.png'
+                                })">
                                 +
                             </button><img class="w-44 lg:w-24 mx-auto" src="./assets/process-2.png" alt="Vertical">
                         </div>
@@ -513,7 +533,17 @@
                         class="flex-col justify-center items-center text-center px-6 mt-5 md:mt-12 lg:mt-0 lg:px-2 lg:w-1/3 relative">
                         <div class="relative">
                             <button
-                                class="h-9 w-9 bg-sinigreen font-bold text-2xl rounded-full hover:animate-bounce absolute right-10 md:right-52 lg:right-10 lg:-top-5 xl:right-16 xl:top-0">
+                                class="h-9 w-9 bg-sinigreen font-bold text-2xl rounded-full hover:animate-bounce absolute right-10 md:right-52 lg:right-10 lg:-top-5 xl:right-16 xl:top-0"
+                                onclick="openProcedureModal({
+                                name: 'Tipo T',
+                                description: `<ul class='list-decimal px-6'>
+                                    <li>Se realizan tres incisiones: una alrededor del borde de la areola, una vertical desde la areola hasta el pliegue del seno, y una horizontal a lo largo del pliegue del seno, formando una T invertida.</li>
+                                    <li>A través de estas incisiones, el cirujano remueve el exceso de piel y tejido si es necesario, y crea un bolsillo para el implante.</li>
+                                    <li>El implante se coloca en el bolsillo, ya sea debajo del músculo pectoral o detrás del tejido mamario.</li>
+                                    <li>Las incisiones se cierran con suturas y se aplica un vendaje.</li>
+                                    </ul>`,
+                                image: './assets/process-3.png'
+                                })">
                                 +
                             </button>
                             <img class="w-44 lg:w-24 mx-auto" src="./assets/process-3.png" alt="Tipo T">
@@ -521,8 +551,7 @@
                         <h4 class="text-sinigreen font-bold mt-5">Tipo "T"</h4>
                         <p class="mt-7 md:mt-4 md:px-20 lg:px-0 text-sinigreen text-sm lg:text-xs">
                             A través de estas incisiones, el cirujano remueve el exceso de piel y tejido si es
-                            necesario, y crea un bolsillo para el
-                            implante.
+                            necesario, y crea un bolsillo para el implante.
                         </p>
                     </div>
                 </div>
@@ -626,6 +655,27 @@
                     <button
                         class="bg-siniblue text-white font-bold px-5 py-2 text-xs uppercase rounded-full tracking-wide"
                         id="close-modal" onclick="closeModal()">Cerrar
+                        ventana</button>
+                </div>
+            </modal>
+        </div>
+        <div id="procedures-modal"
+            class="h-screen w-screen fixed top-0 left-0 bg-black bg-opacity-40  justify-center items-start md:items-center hidden z-50 overflow-y-scroll py-5 md:py-0">
+            <modal
+                class="w-11/12 md:w-3/4 max-w-screen-md h-auto bg-white pt-4 md:pt-12 pb-3 md:pb-5 px-3 md:px-6 lg:px-16 rounded-lg">
+                <div class="w-1/2 md:w-1/3 mx-auto mb-4 md:mb-7">
+                    <img id="procedures-img" class="w-full" src="" alt="">
+                </div>
+                <h3 id="procedures-title" class="font-bold text-center mb-2 uppercase">
+                    Contractura capsular
+                </h3>
+                <div id="procedures-description" class="font-light text-sm md:text-base">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit
+                </div>
+                <div class="flex justify-center items-center mt-10">
+                    <button
+                        class="bg-siniblue text-white font-bold px-5 py-2 text-xs uppercase rounded-full tracking-wide"
+                        id="close-modal" onclick="closeProcedureModal()">Cerrar
                         ventana</button>
                 </div>
             </modal>
@@ -800,6 +850,31 @@
             modal.classList.remove('flex')
             document.querySelector('html').style.overflow = 'auto'
         }
+        const openProcedureModal = (data) => {
+            const modal = document.getElementById('procedures-modal')
+            if (modal.classList.contains('flex')) return
+            const title = document.getElementById('procedures-title')
+            const description = document.getElementById('procedures-description')
+            const img = document.getElementById('procedures-img')
+            title.textContent = data.name
+            description.innerHTML = data.description
+            img.src = data.image
+            modal.classList.remove('hidden')
+            modal.classList.add('flex')
+            document.querySelector('html').style.overflow = 'hidden'
+        }
+        const closeProcedureModal = () => {
+            const modal = document.getElementById('procedures-modal')
+            if (modal.classList.contains('hidden')) return
+            const title = document.getElementById('procedures-title')
+            const description = document.getElementById('procedures-description')
+            title.innerHTML = ""
+            description.textContent = ""
+            modal.classList.add('hidden')
+            modal.classList.remove('flex')
+            document.querySelector('html').style.overflow = 'auto'
+        }
+
         const toggleMenu = () => {
             const menu = document.getElementById('mobile-menu')
             if (menu.classList.contains('show')) {
