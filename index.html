@@ -630,30 +630,83 @@
                     posible.</p>
             </div>
             <div class="relative z-10">
+                <div id="error-alert" class=" text-center py-4 lg:px-4 hidden">
+                    <div class="p-2 bg-red-800 items-center text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex"
+                        role="alert">
+                        <span
+                            class="flex rounded-full bg-red-500 uppercase px-2 py-1 text-xs font-bold mr-3 text-white">Error</span>
+                        <span class="font-semibold mr-2 text-left flex-auto text-white">
+                            <span id="error-message" class="text-white"> al enviar el formulario, por favor intenta de
+                                nuevo.</span>
+                        </span>
+                    </div>
+                </div>
+                <div id="success-alert" class=" text-center py-4 lg:px-4 hidden">
+                    <div class="p-2 bg-green-800 items-center text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex"
+                        role="alert">
+                        <span
+                            class="flex rounded-full bg-green-500 uppercase px-2 py-1 text-xs font-bold mr-3 text-white">Error</span>
+                        <span class="font-semibold mr-2 text-left flex-auto text-white">
+                            <span id="success-message" class="text-white"> al enviar el formulario, por favor intenta de
+                                nuevo.</span>
+                        </span>
+                    </div>
+                </div>
                 <form id="contact-form" class="flex flex-col justify-items-center items-center w-2/3 xl:w-1/3 mx-auto">
                     <div class="my-2 w-full">
-                        <input name="name"
+                        <input name="name" id="name"
                             class="w-full px-3 py-1 placeholder:text-xs placeholder:uppercase tracking-wide rounded-sm block"
-                            type="text" placeholder="NOMBRE:*" required>
+                            value="" type="text" placeholder="NOMBRE:*" required>
+                        <div id="name-error" class="text-sm italic mt-2 items-center justify-start hidden">
+                            <svg class="fill-red-500 h-4 w-4 mr-2" viewBox="0 0 20 20">
+                                <path
+                                    d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z" />
+                            </svg>
+                            <span class="text-red-500 underline">error</span>
+                        </div>
                     </div>
                     <div class="my-2 w-full">
-                        <input name="email"
+                        <input name="email" id="email"
                             class="w-full px-3 py-1 placeholder:text-xs placeholder:uppercase tracking-wide rounded-sm block"
-                            type="email" placeholder="correo electrónico:*" required>
+                            value="" type="email" placeholder="correo electrónico:*" required>
+                        <div id="email-error" class="text-sm italic mt-2 items-center justify-start hidden">
+                            <svg class="fill-red-500 h-4 w-4 mr-2" viewBox="0 0 20 20">
+                                <path
+                                    d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z" />
+                            </svg>
+                            <span class="text-red-500 underline">error</span>
+                        </div>
                     </div>
                     <div class="my-2 w-full">
-                        <input name="phone"
+                        <input name="phone" id="phone"
                             class="w-full px-3 py-1 placeholder:text-xs placeholder:uppercase tracking-wide rounded-sm block"
-                            type="tel" placeholder="teléfono (con lada):*" required>
+                            value="" type="tel" placeholder="teléfono (con lada):*" required>
+                        <div id="phone-error" class="text-sm italic mt-2 items-center justify-start hidden">
+                            <svg class="fill-red-500 h-4 w-4 mr-2" viewBox="0 0 20 20">
+                                <path
+                                    d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z" />
+                            </svg>
+                            <span class="text-red-500 underline">error</span>
+                        </div>
                     </div>
                     <div class="my-2">
-                        <button type="submit"
+                        <button type="submit" id="submit-btn"
                             class="bg-orange-400 text-white uppercase tracking-wider px-6 py-2 leading-none text-sm flex justify-between items-center group">
                             Enviar
                             <span>
                                 <img class="ml-4 w-6 transform group-hover:translate-x-5 transition-transform"
                                     src="./assets/svg/form-arrow.svg" alt="">
                             </span>
+                        </button>
+                        <button disabled id="submitting"
+                            class="bg-orange-400 text-white uppercase tracking-wider px-6 py-2 leading-none text-sm justify-between items-center group hidden">
+                            Enviando información
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="stroke-white size-6 animate-spin">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
+                            </svg>
+
                         </button>
                     </div>
                 </form>
@@ -796,218 +849,8 @@
     </footer>
     <script src="./js/splide.min.js"></script>
     <script src="./js/scroll-entrance.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            new Splide('.splide').mount();
-            const patologieList = document.getElementById('patologies-list')
-            console.log(patologieList)
-            const listItemTemplate = patologieList.querySelector('.patologie-item')
-            patologies.forEach(patologie => {
-                patologieList.appendChild(addAndClone(listItemTemplate, patologie))
-            })
-            listItemTemplate.remove()
-            const form = document.getElementById('contact-form')
-            form.onsubmit = (e) => {
-                e.preventDefault()
-                const data = compileFormData()
-                sendContactForm(data)
-            }
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-
-                    // Obtén el alto de la barra de navegación
-                    const navbarHeight = document.querySelector('.navbar').offsetHeight;
-
-                    // Encuentra el elemento al que se desea desplazar
-                    const scrollTarget = document.querySelector(this.getAttribute('href'));
-
-                    // Calcula la posición a la que se necesita desplazar
-                    const topOffset = scrollTarget.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
-
-                    // Realiza el desplazamiento suave
-                    window.scrollTo({
-                        top: topOffset - 20,
-                        behavior: 'smooth'
-                    });
-                });
-            });
-        });
-        const compileFormData = () => {
-            const form = document.getElementById('contact-form')
-            const data = {}
-            form.querySelectorAll('input').forEach(input => {
-                data[input.name] = input.value
-            })
-            return data
-        }
-        const sendContactForm = (data) => {
-            console.log(data)
-        }
-        const addAndClone = (template, data) => {
-            const item = template.cloneNode(true)
-            item.setAttribute('id', data.id)
-            item.querySelector('[data-patology="name"]').textContent = data.name
-            const button = item.querySelector('button')
-            button.onclick = () => openModal(data)
-            return item
-        }
-        const openModal = (data) => {
-            const modal = document.getElementById('patologie-modal')
-            if (modal.classList.contains('flex')) return
-            const title = document.getElementById('patologie-title')
-            const description = document.getElementById('patologie-description')
-            title.textContent = data.name
-            description.innerHTML = data.description
-            modal.classList.remove('hidden')
-            modal.classList.add('flex')
-            document.querySelector('html').style.overflow = 'hidden'
-        }
-        const closeModal = () => {
-            const modal = document.getElementById('patologie-modal')
-            if (modal.classList.contains('hidden')) return
-            const title = document.getElementById('patologie-title')
-            const description = document.getElementById('patologie-description')
-            title.innerHTML = ""
-            description.textContent = ""
-            modal.classList.add('hidden')
-            modal.classList.remove('flex')
-            document.querySelector('html').style.overflow = 'auto'
-        }
-        const openProcedureModal = (data) => {
-            const modal = document.getElementById('procedures-modal')
-            if (modal.classList.contains('flex')) return
-            const title = document.getElementById('procedures-title')
-            const description = document.getElementById('procedures-description')
-            const img = document.getElementById('procedures-img')
-            title.textContent = data.name
-            description.innerHTML = data.description
-            img.src = data.image
-            modal.classList.remove('hidden')
-            modal.classList.add('flex')
-            document.querySelector('html').style.overflow = 'hidden'
-        }
-        const closeProcedureModal = () => {
-            const modal = document.getElementById('procedures-modal')
-            if (modal.classList.contains('hidden')) return
-            const title = document.getElementById('procedures-title')
-            const description = document.getElementById('procedures-description')
-            title.innerHTML = ""
-            description.textContent = ""
-            modal.classList.add('hidden')
-            modal.classList.remove('flex')
-            document.querySelector('html').style.overflow = 'auto'
-        }
-
-        const toggleMenu = () => {
-            const menu = document.getElementById('mobile-menu')
-            if (menu.classList.contains('show')) {
-                menu.classList.remove('show')
-                return
-            }
-            menu.classList.add('show')
-
-        }
-        const patologies = [
-            {
-                id: 1,
-                name: 'Contractura capsular',
-                description: `<p>Cuando se coloca el implante se forma a su alrededor tejido cicatricial, que el cuerpo forma como cápsula protectora alrededor de cualquier elemento que le resulte extraño. Por lo general la cápsula de tejido es suave o ligeramente firme, imperceptible y ayuda a mantener el implante en su sitio.
-                <br><br>
-                Algunas veces dicha en dicha cápsula el tejido se torna duro y denso, lo que puede distorsionar el implante mamario encapsulado y hacer que se desplace hacia arriba, lo que puede causar también dolor crónico.</p><br>
-                <p>Otros factores que pueden aumentar el riego de contractura son:</p><br>
-                <ul>
-                    <li>- Rotura de los implantes de seno.</li>
-                    <li>- Acumulación de sangre en donde se extirpó tejido durante la cirugía o “hematoma”.</li>
-                    <li>- Infección, al formarse una biopelícula microbiana en un implante.</li>
-                    <li>- Predisposición genética a la formación de cicatrices.</li>
-                </ul>
-                `
-            },
-            {
-                id: 2,
-                name: 'Dolor en los senos',
-                description: `<p>Si posterior a la cirugía y después en tiempo razonable se siguen teniendo molestas, tirantes, picores o incluso pequeños pinchazos en los senos, puede deberse a complicaciones posteriores como una ruptura, rotación de prótesis o contractura capsular. Ante cualquiera de estos síntomas, hay que acudir con tu médico especialista.</p>`
-            },
-            {
-                id: 3,
-                name: 'Ruptura (desgarros o agujeros en la cubierta) de los implantes',
-                description: `<p>
-                Los implantes se rompen por diversos motivos. Entre más tiempo tenga la paciente con sus implantes, el riesgo de ruptura será mayor. Pueden romperse por algún trauma o accidente o la inserción de una aguja durante la biopsia.<br>
-                En implantes de solución salina, si el implante se rompe o la válvula falla, la solución se filtra rápidamente por el organismo en pocos días y el seno se ve desinflado.<br>
-                Si el implante es de silicona, el gel se drena lentamente por ser más espeso. El organismo no absorbe el gel de silicona. Algunos signos de ruptura son el cambio de forma y tamaño, dolor creciente, mayor firmeza e inflamación durante varios días, y puede provocar también contractura capsular. En ocasiones hay ausencia de síntomas evidentes, lo que se le conoce como “rotura silenciosa”.<br>
-                Se recomienda a las pacientes que tengan implantes de gel de silicona, practicarse una resonancia magnética de mama tres años después de la cirugía y después cada dos años para descartar alguna rotura.</p>
-                `
-            },
-            {
-                id: 4,
-                name: 'Infección',
-                description: `<p>
-                Una infección bacteriana puede desarrollarse en el tejido que rodea el implante de manera posterior a la cirugía. Algunos de los signos de infección son: <br><br>
-                -Fiebre de 38°C o más. <br>
-                -Dolor en el seno.<br>
-                - Enrojecimiento e inflamación.<br>
-                - Secreción en el lugar donde se hizo la incisión.<br>
-                - Hematomas. <br><br>
-                Generalmente una infección cede con antibióticos y reposo. Si no desaparece en una semana, se recomienda acudir con tu médico para tomar las medidas pertinentes.
-                </p>`
-            },
-            {
-                id: 5,
-                name: 'Enfermedades autoinmunes',
-                description: `<p>
-                Algunas pacientes con implantes también han reportado problemas de salud como enfermedades del tejido conectivo, como son el Lupus y la Artritis reumatoide. <br><br>
-                    •	<strong>Lupus</strong><br>
-                El lupus es una enfermedad que se presenta cuando el sistema inmunitario del cuerpo ataca tus propios tejidos y órganos (enfermedad autoinmune). La inflamación que causa el lupus puede afectar distintos sistemas y órganos del cuerpo, incluso las articulaciones, la piel, los riñones, las células sanguíneas, el cerebro, el corazón y los pulmones.<br><br>
-                    •	<strong>Artritis reumatoide</strong><br>
-                La artritis reumatoide es un trastorno inflamatorio crónico que puede afectar más que solo las articulaciones. En algunas personas, la afección puede dañar distintos sistemas corporales, incluida la piel, los ojos, los pulmones, el corazón y los vasos sanguíneos.
-                La artritis reumatoide es un trastorno autoinmune que ocurre cuando el sistema inmunitario ataca por error los tejidos del cuerpo.
-                </p>`
-            },
-            {
-                id: 6,
-                name: 'Problemas de lactancia por implantes de seno',
-                description: `<p>
-                Aunque la lactancia materna suele ser posible después de un implante de senos, algunas mujeres pueden tener problemas para producir suficiente leche, aunque no existe ninguna evidencia científica que lo vincule, pero sí se ha comprobado que los implantes sufren una mayor incidencia de contractura capsular durante el embarazo/lactancia y, más aún, cuando la cirugía es muy reciente.
-                </p>`
-            },
-            {
-                id: 7,
-                name: 'Síndrome de Asia',
-                description: `<p>
-                El Síndrome Autoinmune Inducido por Adyuvantes (ASIA, por sus siglas en inglés) es una reacción inflamatoria extremadamente rara y poco común del cuerpo ante el contacto con una sustancia extraña. Hablando de implantes de senos, el gel de silicona puede generar este tipo de reacción. <br><br>
-                No siempre se generará este síndrome por tener implantes de seno, ya que este se da por diferentes motivos, y también no todos los implantes propician este tipo de reacción y tampoco de manera inmediata.<br><br>
-                Se piensa que la silicona es un adyuvante que potencia la respuesta inmune del cuerpo a través de la liberación de citosina, produciendo mayor cantidad de células autoinmunes en el cuerpo.
-                <br><br>
-                Los síntomas son variables, pero los más frecuentes pueden ser:<br><br>
-                    •	Dolor, debilidad o inflamación muscular o articular.<br>
-                    •	Fatiga crónica o alteraciones del sueño.<br>
-                    •	Pérdida de memoria o deterioro cognitivo.<br>
-                    •	Fiebre y malestar general.<br>
-                    •	Sensación de sequedad en la boca.<br>
-                    •	Aparición de otras enfermedades (artritis, esclerosis múltiple o sistémica, artralgia).<br>
-                </p>`
-            },
-            {
-                id: 7,
-                name: 'Dolores de cuello o espalda',
-                description: `<p>
-                Al momento de hacer un aumento o implante de senos, dependiendo del tamaño, genera un peso adicional que lleva a la paciente a cambios de postura.<br><br>
-                El peso excesivo puede generar dolores, deformidades de columna lumbalgia, encorvamientos, escoliosis y otros patologías asociadas con el peso de los implantes, causando un desequilibro en el cuerpo, haciendo que el eje del peso esté echado hacia adelante, lo que provoca que la musculatura del cuello y espalda se activen más para mantener la postura correcta.<br><br>
-                Esto mismo causa entumecimiento, hormigueo, postura pobre, incomodidad para la actividad física o hasta la postura al dormir.
-                </p>`
-            },
-            {
-                id: 8,
-                name: 'Los implantes de seno no son dispositivos de por vida',
-                description: `<p>
-                Toda mujer que se someta a un aumento de senos, debe estar consciente que no son dispositivos para toda la vida. Cuanto más tiempo tenga los implantes, mayores serán las posibilidades de que desarrolle complicaciones, algunas de las cuales requerirán más cirugía. <br><br>
-                Aunque la ciencia ha avanzado a pasos agigantados y los implantes son diseñados con la tecnología de punta y avalados  por estudios médicos, la vida útil de los implantes de senos varía según la persona y es difícil de predecir. Esto quiere decir que en algún momento se podrá necesitar unas cirugías adicionales, pero nadie puede predecir cuándo.
-                </p>`
-            }
-        ]
-
-    </script>
+    <script src="./js/sinimplant.js"></script>
+    <script src="./js/contact-form.js"></script>
 </body>
 
 </html>
