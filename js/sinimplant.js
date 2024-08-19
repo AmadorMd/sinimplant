@@ -236,7 +236,7 @@ const patologies = [
         name: 'Contractura capsular',
         description: `<p>Cuando se coloca el implante se forma a su alrededor tejido cicatricial, que el cuerpo forma como cápsula protectora alrededor de cualquier elemento que le resulte extraño. Por lo general la cápsula de tejido es suave o ligeramente firme, imperceptible y ayuda a mantener el implante en su sitio.
                 <br><br>
-                Algunas veces dicha en dicha cápsula el tejido se torna duro y denso, lo que puede distorsionar el implante mamario encapsulado y hacer que se desplace hacia arriba, lo que puede causar también dolor crónico.</p><br>
+                Algunas veces en dicha cápsula el tejido se torna duro y denso, lo que puede distorsionar el implante mamario encapsulado y hacer que se desplace hacia arriba, lo que puede causar también dolor crónico.</p><br>
                 <p>Otros factores que pueden aumentar el riego de contractura son:</p><br>
                 <ul>
                     <li>- Rotura de los implantes de seno.</li>
@@ -249,15 +249,15 @@ const patologies = [
     {
         id: 2,
         name: 'Dolor en los senos',
-        description: `<p>Si posterior a la cirugía y después en tiempo razonable se siguen teniendo molestas, tirantes, picores o incluso pequeños pinchazos en los senos, puede deberse a complicaciones posteriores como una ruptura, rotación de prótesis o contractura capsular. Ante cualquiera de estos síntomas, hay que acudir con tu médico especialista.</p>`
+        description: `<p>Si posterior a la cirugía y después en un tiempo razonable se siguen teniendo molestias, picores o incluso pequeños pinchazos en los senos, puede deberse a complicaciones posteriores como una ruptura, rotación de prótesis o contractura capsular. Ante cualquiera de estos síntomas, hay que acudir con tu médico especialista.</p>`
     },
     {
         id: 3,
-        name: 'Ruptura (desgarros o agujeros en la cubierta) de los implantes',
+        name: 'Ruptura (desgarros en la cubierta) de los implantes',
         description: `<p>
-                Los implantes se rompen por diversos motivos. Entre más tiempo tenga la paciente con sus implantes, el riesgo de ruptura será mayor. Pueden romperse por algún trauma o accidente o la inserción de una aguja durante la biopsia.<br>
-                En implantes de solución salina, si el implante se rompe o la válvula falla, la solución se filtra rápidamente por el organismo en pocos días y el seno se ve desinflado.<br>
-                Si el implante es de silicona, el gel se drena lentamente por ser más espeso. El organismo no absorbe el gel de silicona. Algunos signos de ruptura son el cambio de forma y tamaño, dolor creciente, mayor firmeza e inflamación durante varios días, y puede provocar también contractura capsular. En ocasiones hay ausencia de síntomas evidentes, lo que se le conoce como “rotura silenciosa”.<br>
+                Los implantes se rompen por diversos motivos. Entre más tiempo tenga la paciente con sus implantes, el riesgo de ruptura será mayor. Pueden romperse por algún trauma o accidente o la inserción de una aguja durante la biopsia.<br><br>
+                En implantes de solución salina, si el implante se rompe o la válvula falla, la solución se filtra rápidamente por el organismo en pocos días y el seno se ve desinflado.<br><br>
+                Si el implante es de silicona, el gel se drena lentamente por ser más espeso. El organismo no absorbe el gel de silicona. Algunos signos de ruptura son el cambio de forma y tamaño, dolor creciente, mayor firmeza e inflamación durante varios días, y puede provocar también contractura capsular. En ocasiones hay ausencia de síntomas evidentes, lo que se le conoce como “rotura silenciosa”.<br><br>
                 Se recomienda a las pacientes que tengan implantes de gel de silicona, practicarse una resonancia magnética de mama tres años después de la cirugía y después cada dos años para descartar alguna rotura.</p>
                 `
     },
@@ -314,8 +314,8 @@ const patologies = [
         id: 7,
         name: 'Dolores de cuello o espalda',
         description: `<p>
-                Al momento de hacer un aumento o implante de senos, dependiendo del tamaño, genera un peso adicional que lleva a la paciente a cambios de postura.<br><br>
-                El peso excesivo puede generar dolores, deformidades de columna lumbalgia, encorvamientos, escoliosis y otros patologías asociadas con el peso de los implantes, causando un desequilibro en el cuerpo, haciendo que el eje del peso esté echado hacia adelante, lo que provoca que la musculatura del cuello y espalda se activen más para mantener la postura correcta.<br><br>
+                Al momento de hacer un aumento de senos con implantes, dependiendo del tamaño, genera un peso adicional que lleva a la paciente a cambios de postura.<br><br>
+                El peso excesivo puede generar dolores, deformidades de columna lumbalgia, encorvamientos, escoliosis, causando un desequilibro en el cuerpo, haciendo que el eje del peso esté echado hacia adelante, lo que provoca que la musculatura del cuello y espalda se activen más para mantener la postura correcta.<br><br>
                 Esto mismo causa entumecimiento, hormigueo, postura pobre, incomodidad para la actividad física o hasta la postura al dormir.
                 </p>`
     },
