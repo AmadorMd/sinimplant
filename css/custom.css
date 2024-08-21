@@ -21,3 +21,8 @@ html {
         transform: scaleY(1);
     }
 }
+
+.splide__arrow:disabled {
+    opacity: 0;
+    pointer-events: none;
+}
