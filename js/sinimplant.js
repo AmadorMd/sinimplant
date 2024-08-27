@@ -236,11 +236,11 @@ const patologies = [
         name: 'Contractura capsular',
         description: `<p>Cuando se coloca el implante se forma a su alrededor tejido cicatricial, que el cuerpo forma como cápsula protectora alrededor de cualquier elemento que le resulte extraño. Por lo general la cápsula de tejido es suave o ligeramente firme, imperceptible y ayuda a mantener el implante en su sitio.
                 <br><br>
-                Algunas veces en dicha cápsula el tejido se torna duro y denso, lo que puede distorsionar el implante mamario encapsulado y hacer que se desplace hacia arriba, lo que puede causar también dolor crónico.</p><br>
-                <p>Otros factores que pueden aumentar el riego de contractura son:</p><br>
+                Algunas veces dicha en dicha cápsula el tejido se torna duro y denso, lo que puede distorsionar el implante mamario encapsulado y hacer que se desplace hacia arriba, lo que puede causar dolor crónico.</p><br><br>
+                <p>Otros factores que pueden aumentar el riesgo de contractura son:</p><br>
                 <ul>
                     <li>- Rotura de los implantes de seno.</li>
-                    <li>- Acumulación de sangre en donde se extirpó tejido durante la cirugía o “hematoma”.</li>
+                    <li>- Acumulación de sangre o hematoma en donde se extirpó tejido durante la cirugía.</li>
                     <li>- Infección, al formarse una biopelícula microbiana en un implante.</li>
                     <li>- Predisposición genética a la formación de cicatrices.</li>
                 </ul>
@@ -290,7 +290,7 @@ const patologies = [
         id: 6,
         name: 'Problemas de lactancia por implantes de seno',
         description: `<p>
-                Aunque la lactancia materna suele ser posible después de un implante de senos, algunas mujeres pueden tener problemas para producir suficiente leche, aunque no existe ninguna evidencia científica que lo vincule, pero sí se ha comprobado que los implantes sufren una mayor incidencia de contractura capsular durante el embarazo/lactancia y, más aún, cuando la cirugía es muy reciente.
+                Aunque la lactancia materna suele ser posible después de un implante de senos, algunas mujeres pueden tener problemas para producir suficiente leche, aunque no existe ninguna evidencia científica que lo vincule, pero sí se ha comprobado que los implantes sufren una mayor incidencia de contractura capsular durante el embarazo o lactancia, y más cuando la cirugía es muy reciente.
                 </p>`
     },
     {
@@ -314,17 +314,17 @@ const patologies = [
         id: 7,
         name: 'Dolores de cuello o espalda',
         description: `<p>
-                Al momento de hacer un aumento de senos con implantes, dependiendo del tamaño, genera un peso adicional que lleva a la paciente a cambios de postura.<br><br>
-                El peso excesivo puede generar dolores, deformidades de columna lumbalgia, encorvamientos, escoliosis, causando un desequilibro en el cuerpo, haciendo que el eje del peso esté echado hacia adelante, lo que provoca que la musculatura del cuello y espalda se activen más para mantener la postura correcta.<br><br>
-                Esto mismo causa entumecimiento, hormigueo, postura pobre, incomodidad para la actividad física o hasta la postura al dormir.
+                Al momento de hacer un aumento de senos con implantes, dependiendo del tamaño, se genera un peso adicional que lleva a la paciente a cambios de postura.<br><br>
+                El peso excesivo llega a generar dolores, deformidades de columna, lumbalgia, encorvamientos, escoliosis, que causan un desequilibro en el cuerpo, haciendo que el eje del peso esté echado hacia adelante, lo que provoca que la musculatura del cuello y espalda se activen más para mantener la postura correcta.<br><br>
+                Esto mismo causa entumecimiento, hormigueo, postura pobre, incomodidad para la actividad física o hasta cambios en la postura al dormir.
                 </p>`
     },
-    {
-        id: 8,
-        name: 'Los implantes de seno no son dispositivos de por vida',
-        description: `<p>
-                Toda mujer que se someta a un aumento de senos, debe estar consciente que no son dispositivos para toda la vida. Cuanto más tiempo tenga los implantes, mayores serán las posibilidades de que desarrolle complicaciones, algunas de las cuales requerirán más cirugía. <br><br>
-                Aunque la ciencia ha avanzado a pasos agigantados y los implantes son diseñados con la tecnología de punta y avalados  por estudios médicos, la vida útil de los implantes de senos varía según la persona y es difícil de predecir. Esto quiere decir que en algún momento se podrá necesitar unas cirugías adicionales, pero nadie puede predecir cuándo.
-                </p>`
-    }
+    // {
+    //     id: 8,
+    //     name: 'Los implantes de seno no son dispositivos de por vida',
+    //     description: `<p>
+    //             Toda mujer que se someta a un aumento de senos, debe estar consciente que no son dispositivos para toda la vida. Cuanto más tiempo tenga los implantes, mayores serán las posibilidades de que desarrolle complicaciones, algunas de las cuales requerirán más cirugía. <br><br>
+    //             Aunque la ciencia ha avanzado a pasos agigantados y los implantes son diseñados con la tecnología de punta y avalados  por estudios médicos, la vida útil de los implantes de senos varía según la persona y es difícil de predecir. Esto quiere decir que en algún momento se podrá necesitar unas cirugías adicionales, pero nadie puede predecir cuándo.
+    //             </p>`
+    // }
 ]

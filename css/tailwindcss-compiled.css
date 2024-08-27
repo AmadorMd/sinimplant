@@ -769,6 +769,10 @@ video {
   display: flex;
 }
 
+.inline-flex {
+  display: inline-flex;
+}
+
 .grid {
   display: grid;
 }
@@ -780,6 +784,10 @@ video {
 .size-6 {
   width: 1.5rem;
   height: 1.5rem;
+}
+
+.h-1 {
+  height: 0.25rem;
 }
 
 .h-12 {
@@ -828,6 +836,10 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.w-1 {
+  width: 0.25rem;
 }
 
 .w-1\/2 {
@@ -1458,12 +1470,21 @@ video {
   background-color: rgb(223 234 221 / var(--tw-bg-opacity));
 }
 
+.hover\:font-bold:hover {
+  font-weight: 700;
+}
+
 .hover\:text-gray-500\/75:hover {
   color: rgb(107 114 128 / 0.75);
 }
 
 .hover\:text-gray-600\/75:hover {
   color: rgb(75 85 99 / 0.75);
+}
+
+.hover\:text-siniblue:hover {
+  --tw-text-opacity: 1;
+  color: rgb(14 47 75 / var(--tw-text-opacity));
 }
 
 .hover\:opacity-75:hover {

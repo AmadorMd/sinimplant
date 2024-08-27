@@ -4,7 +4,8 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "npx tailwindcss -i ./css/tailwindcss.css -o ./css/tailwindcss-compiled.css --watch"
+    "watch": "npx tailwindcss -i ./css/tailwindcss.css -o ./css/tailwindcss-compiled.css --watch",
+    "build": "npx tailwindcss -o ./css/tailwindcss-prod.min.css --minify"
   },
   "author": "",
   "license": "ISC",
