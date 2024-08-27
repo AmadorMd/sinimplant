@@ -71,7 +71,7 @@ const sendContactForm = async (data) => {
 
 }
 const sendEmail = async (data, retryCount = 3, retryDelay = 1500) => {
-    const url = 'http://retirodeimplantes.com/email/send.php'
+    const url = 'https://retirodeimplantes.com/email/send.php'
     for (let i = 0; i < retryCount; i++) {
         try {
             const response = await fetch(url, {
