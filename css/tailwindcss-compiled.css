@@ -786,10 +786,6 @@ video {
   height: 1.5rem;
 }
 
-.h-1 {
-  height: 0.25rem;
-}
-
 .h-12 {
   height: 3rem;
 }
@@ -836,10 +832,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.w-1 {
-  width: 0.25rem;
 }
 
 .w-1\/2 {
@@ -912,6 +904,10 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.max-w-64 {
+  max-width: 16rem;
 }
 
 .max-w-screen-md {
@@ -1472,10 +1468,6 @@ video {
 
 .hover\:font-bold:hover {
   font-weight: 700;
-}
-
-.hover\:text-gray-500\/75:hover {
-  color: rgb(107 114 128 / 0.75);
 }
 
 .hover\:text-gray-600\/75:hover {
